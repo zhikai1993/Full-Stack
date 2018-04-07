@@ -1,0 +1,14 @@
+{
+  "name": "zhikai",
+  "version": "1.0.1",
+  "description": "ExpressRoutingExercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "czk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

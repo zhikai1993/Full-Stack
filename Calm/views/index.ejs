@@ -1,0 +1,31 @@
+<% include partials/header.ejs %>
+<link rel="stylesheet" type ="text/css" href="/app.css">
+<div class = "container">
+    <header class="jumbotron">
+        <div class="container text-center">
+            <h1>Welcome to Zhikai's Anecdotes!</h1></h1>
+            <h4>A collection of what he did </h4>
+            <p>
+                <a class="btn btn-info btn-lg" herf="/"><i class="fa fa-search" aria-hidden="true"></i> More About Him</a>
+            </p>
+            <p>
+                <a class ="btn btn-warning btn-lg" href="/index/new">To add another anecdote</a>
+            </p>
+        </div>
+    </header>
+    
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% anecdotes.forEach(function(anecdote) { %>
+             <div class="col-md-3 col-sm-6">
+                 <div class="thumbnail">
+                     <img src="<%= anecdote.image %>">
+                     <div class="caption">
+                         <h4><%= anecdote.name %></h4>
+                     </div>
+                 </div>
+             </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include partials/footer.ejs %>
